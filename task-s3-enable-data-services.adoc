@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: task-s3-enable-data-services.html 
+keywords: s3 buckets, s3 storage, s3 working environment, s3 system, amazon s3 buckets, amazon s3 working environment, amazon s3 system, 
+summary: 在NetApp控制台中發現 S3 儲存桶後，您可以使用NetApp資料服務進行備份、分層、分類和資料同步。 
+---
+= 將NetApp資料服務與 S3 儲存桶結合使用
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在NetApp控制台中發現 S3 儲存桶後，您可以使用NetApp資料服務進行備份、分層、分類和資料同步。
+
+* 使用* NetApp備份和還原*將資料從本機ONTAP和Cloud Volumes ONTAP系統備份到 S3 物件儲存。
++
+首先，前往系統頁面，然後將本機ONTAP或Cloud Volumes ONTAP系統拖曳到您的 Amazon S3 系統上。
+
++
+https://docs.netapp.com/us-en/data-services-backup-recovery/concept-ontap-backup-to-cloud.html["了解有關將ONTAP資料備份到 Amazon S3 儲存的更多信息"^] 。
+
+* 使用* NetApp Cloud Tiering* 將非活動資料從本機ONTAP叢集分層到 S3 物件儲存。
++
+首先，前往系統頁面，然後將本機ONTAP系統拖曳到您的 Amazon S3 系統上。
+
++
+https://docs.netapp.com/us-en/data-services-cloud-tiering/task-tiering-onprem-aws.html["了解有關將ONTAP資料分層到 Amazon S3 儲存的更多信息"^] 。
+
+* 使用* NetApp Copy and Sync* 將資料同步到 S3 儲存桶或從 S3 儲存桶同步資料。
++
+首先，前往系統頁面並將來源系統拖曳到目標系統上。您的 Amazon S3 系統可以是來源，也可以是目標。
+
++
+您也可以選擇您的 Amazon S3 系統，然後按一下「服務」面板中的「複製和同步」以將資料同步到 S3 儲存桶或從 S3 儲存桶同步資料。
+
+
+
+https://docs.netapp.com/us-en/data-services-copy-sync/concept-cloud-sync.html["了解有關NetApp複製和同步服務的更多信息"^] 。
+
+* 使用* NetApp資料分類*掃描您的 S3 儲存桶以尋找個人和敏感資料。  NetApp資料分類可以掃描帳戶中的任何儲存桶，無論該儲存桶是否是為NetApp解決方案建立的。
++
+首先，選擇您的 Amazon S3 系統，然後從服務面板的*分類*部分中選擇適當的選項來啟動對您的 S3 儲存桶的掃描。
+
++
+https://docs.netapp.com/us-en/data-services-classification/task-scanning-s3.html["了解有關NetApp資料分類服務的更多信息"^] 。
+
+

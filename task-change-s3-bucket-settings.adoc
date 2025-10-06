@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: task-change-s3-bucket-settings.html 
+keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
+summary: 當您的 Amazon S3 系統在「系統」頁面中可用時，您可以直接從NetApp控制台變更某些儲存桶屬性。 
+---
+= 更改 S3 儲存桶設置
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您的 Amazon S3 系統在「系統」頁面中可用時，您可以直接從NetApp控制台變更某些儲存桶屬性。
+
+請注意，您無法變更儲存桶名稱、AWS 帳戶、區域或物件鎖定設定。
+
+您可以變更的儲存桶屬性包括：
+
+* 是否對儲存桶中的所有物件啟用或停用版本控制。
+* 您可以選擇將標籤套用於新增至儲存桶的物件。
+* 新增至儲存桶的新物件是否已加密，以及用於加密的選項。
+
+
+您可以透過點擊直接變更這些儲存桶設置image:button-horizontal-more.gif["三個點更多按鈕"]拿一桶。
+
+image:screenshot-edit-amazon-s3-bucket.png["此螢幕截圖顯示如何選擇「管理員詳細資料」按鈕來編輯儲存桶屬性。"]
+
+
+
+== 更改版本控制設定
+
+版本控制可讓您在儲存桶中保留物件的多個版本，以便您可以還原意外刪除或覆寫的物件。當將來的物件新增至儲存桶時，您可以變更其版本控制設定。更改版本控制設定不會改變現有物件的值。
+
+除非您在建立儲存桶時啟用了物件鎖定，否則新儲存桶中的版本控制預設是停用的。 https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html["從 Amazon S3 文件中了解有關版本控制的更多信息"^] 。
+
+啟用後，如果想暫時或永久停止版本控制，可以選擇「暫停」狀態。啟用版本控制後，您無法停用它。
+
+image:screenshot-amazon-s3-versioning.png["顯示如何變更儲存桶的版本控制設定的螢幕截圖。"]
+
+
+
+== 新增或變更儲存桶中物件的標籤
+
+標籤是可用於將資源分組以識別應用程式、環境、區域、雲端提供者等的元資料。標籤由標籤鍵和標籤值組成。您可以為儲存桶新增標籤，以便在將物件新增至儲存桶時將標籤套用至物件。您也可以變更和刪除標籤和標籤值。
+
+預設情況下， NetApp控制台建立的新儲存桶中的標籤是停用的。 https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html["從 Amazon S3 文件了解有關標記的更多信息"^] 。
+
+image:screenshot-amazon-s3-tags.png["顯示如何為儲存桶新增標籤鍵/值對的螢幕截圖。"]
+
+新增標籤後，按一下“*應用*”儲存變更。如果您想要新增更多標籤，請點選*新增標籤*。每個儲存桶最多可以添加 10 個標籤。
+
+
+
+== 更改加密設定
+
+伺服器端加密可讓您在 Amazon S3 目標處加密資料。 Amazon S3 將資料寫入磁碟時在物件層級加密您的數據，並在您存取資料時為您解密。當將來的物件新增至儲存桶時，您可以變更所使用的加密設定。
+
+預設情況下，使用NetApp控制台建立的新儲存桶中的「Amazon S3 託管金鑰 (SSE-S3)」啟用加密。 https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html["從 Amazon S3 文件中了解有關伺服器端加密的更多信息"^] 。
+
+或者，您可以選擇使用「AWS 金鑰管理服務金鑰 (SSE-KMS)」啟用加密。您也可以使用自己的客戶提供的金鑰（SSE-C）進行加密，但此功能無法透過控制台 UI 取得 - 您必須使用 Amazon 介面。
+
+image:screenshot-amazon-s3-encryption1.png["顯示如何變更儲存桶使用的加密金鑰類型的螢幕截圖。"]
+
+如果您選擇“AWS 金鑰管理服務金鑰 (SSE-KMS)”，您可以選擇已建立的 AWS KMS 金鑰，也可以使用 AWS KMS 金鑰 ARN（Amazon 資源名稱）。
+
+image:screenshot-amazon-s3-encryption2.png["顯示如何為儲存桶選擇備用加密設定的螢幕截圖。"]
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html["從 Amazon S3 文件了解有關 AWS 金鑰管理服務的更多信息"^]以及關於 https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt["使用客戶金鑰與 AWS 金鑰"^]。
