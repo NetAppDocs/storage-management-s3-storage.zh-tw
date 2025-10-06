@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-add-s3-bucket.html 
 keywords: s3 buckets, s3 storage, s3 working environment, s3 system, amazon s3 buckets, amazon s3 working environment, amazon s3 system, netapp console 
-summary: 當您的 Amazon S3 系統在「系統」頁面中可用時，您可以直接從NetApp控制台新增其他儲存桶。 
+summary: 當您的 Amazon S3 系統在「系統」頁面中可用時，您可以直接從NetApp Console新增其他儲存桶。 
 ---
 = 添加 S3 存儲桶
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 當您的 Amazon S3 系統在「系統」頁面中可用時，您可以
 
 
 [role="lead"]
-當您的 Amazon S3 系統在「系統」頁面中可用時，您可以直接從NetApp控制台新增其他儲存桶。
+當您的 Amazon S3 系統在「系統」頁面中可用時，您可以直接從NetApp Console新增其他儲存桶。
 
 .步驟
 . 在「系統」頁面中，雙擊 Amazon S3 系統以查看「Amazon S3 儲存桶概覽」頁面，然後按一下「新增儲存桶」。
@@ -24,7 +24,7 @@ summary: 當您的 Amazon S3 系統在「系統」頁面中可用時，您可以
 . 在「新增儲存桶」頁面中，輸入建立儲存桶所需的信息，然後按一下「套用」。
 +
 .. 輸入您想要使用的儲存桶名稱。
-.. 選擇將成為儲存桶擁有者的 AWS 帳戶。這可以是部署控制台代理程式的主帳戶，也可以是 https://docs.netapp.com/us-en/console-setup-admin/task-adding-aws-accounts.html#add-credentials-to-a-connector["您新增至NetApp控制台的不同帳戶"^]。
+.. 選擇將成為儲存桶擁有者的 AWS 帳戶。這可以是部署控制台代理程式的主帳戶，也可以是 https://docs.netapp.com/us-en/console-setup-admin/task-adding-aws-accounts.html#add-credentials-to-a-connector["您新增至NetApp Console的不同帳戶"^]。
 .. 選擇將建立儲存桶的 AWS 區域。
 .. 或者，您可以在儲存桶上啟用 S3 物件鎖定，以使用一次寫入多次讀取 (WORM) 模型儲存物件。如果您打算使用物件鎖定，則必須在建立儲存桶時啟用它。啟用物件鎖定也會啟用版本控制。 https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["從 Amazon S3 文件中了解有關對象鎖定的更多信息"^] 。
 +

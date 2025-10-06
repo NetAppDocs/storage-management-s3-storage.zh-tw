@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-change-s3-bucket-settings.html 
 keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
-summary: 當您的 Amazon S3 系統在「系統」頁面中可用時，您可以直接從NetApp控制台變更某些儲存桶屬性。 
+summary: 當您的 Amazon S3 系統在「系統」頁面中可用時，您可以直接從NetApp Console變更某些儲存桶屬性。 
 ---
 = 更改 S3 儲存桶設置
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 當您的 Amazon S3 系統在「系統」頁面中可用時，您可以
 
 
 [role="lead"]
-當您的 Amazon S3 系統在「系統」頁面中可用時，您可以直接從NetApp控制台變更某些儲存桶屬性。
+當您的 Amazon S3 系統在「系統」頁面中可用時，您可以直接從NetApp Console變更某些儲存桶屬性。
 
 請注意，您無法變更儲存桶名稱、AWS 帳戶、區域或物件鎖定設定。
 
@@ -47,7 +47,7 @@ image:screenshot-amazon-s3-versioning.png["顯示如何變更儲存桶的版本�
 
 標籤是可用於將資源分組以識別應用程式、環境、區域、雲端提供者等的元資料。標籤由標籤鍵和標籤值組成。您可以為儲存桶新增標籤，以便在將物件新增至儲存桶時將標籤套用至物件。您也可以變更和刪除標籤和標籤值。
 
-預設情況下， NetApp控制台建立的新儲存桶中的標籤是停用的。 https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html["從 Amazon S3 文件了解有關標記的更多信息"^] 。
+預設情況下， NetApp Console建立的新儲存桶中的標籤是停用的。 https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html["從 Amazon S3 文件了解有關標記的更多信息"^] 。
 
 image:screenshot-amazon-s3-tags.png["顯示如何為儲存桶新增標籤鍵/值對的螢幕截圖。"]
 
@@ -59,7 +59,7 @@ image:screenshot-amazon-s3-tags.png["顯示如何為儲存桶新增標籤鍵/值
 
 伺服器端加密可讓您在 Amazon S3 目標處加密資料。 Amazon S3 將資料寫入磁碟時在物件層級加密您的數據，並在您存取資料時為您解密。當將來的物件新增至儲存桶時，您可以變更所使用的加密設定。
 
-預設情況下，使用NetApp控制台建立的新儲存桶中的「Amazon S3 託管金鑰 (SSE-S3)」啟用加密。 https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html["從 Amazon S3 文件中了解有關伺服器端加密的更多信息"^] 。
+預設情況下，使用NetApp Console建立的新儲存桶中的「Amazon S3 託管金鑰 (SSE-S3)」啟用加密。 https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html["從 Amazon S3 文件中了解有關伺服器端加密的更多信息"^] 。
 
 或者，您可以選擇使用「AWS 金鑰管理服務金鑰 (SSE-KMS)」啟用加密。您也可以使用自己的客戶提供的金鑰（SSE-C）進行加密，但此功能無法透過控制台 UI 取得 - 您必須使用 Amazon 介面。
 

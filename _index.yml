@@ -1,9 +1,9 @@
 ---
 indexpage:
   title: Amazon S3 儲存文檔
-  summary: 開始透過NetApp控制台使用 Amazon S3 儲存空間。
+  summary: 開始透過NetApp Console使用 Amazon S3 儲存。
   keywords: amazon s3, storage, bluexp, netapp console
-  lead: 開始透過NetApp控制台使用 Amazon S3 儲存空間。
+  lead: 開始透過NetApp Console使用 Amazon S3 儲存。
   tiles:
   - title: 開始
     links:
@@ -19,13 +19,13 @@ indexpage:
       url: task-s3-enable-data-services.html
   - title: 更多資訊
     links:
-    - title: NetApp控制台以外的管理 Amazon S3 文檔
+    - title: NetApp Console以外的管理 Amazon S3 文檔
       url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-buckets-s3.html
   - title: 部落格和社區
     links:
-    - title: NetApp控制台
+    - title: NetApp Console
       url: https://www.netapp.com/console
-    - title: NetApp資料服務
+    - title: NetApp Data Services
       url: https://www.netapp.com/data-services/
     - title: NetApp社群
       url: https://community.netapp.com/

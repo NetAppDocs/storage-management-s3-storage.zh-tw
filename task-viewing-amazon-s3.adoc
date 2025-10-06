@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-viewing-amazon-s3.html 
 keywords: s3 buckets, s3 storage, s3 working environment, s3 system, amazon s3 buckets, amazon s3 working environment, amazon s3 system 
-summary: 在 AWS 中安裝控制台代理程式後， NetApp控制台可以自動發現安裝了控制台代理程式的 AWS 帳戶中的 Amazon S3 儲存桶的資訊。已將 Amazon S3 系統新增至「系統」頁面，以便您可以查看此資訊。 
+summary: 在 AWS 中安裝控制台代理程式後， NetApp Console可以自動發現安裝了控制台代理程式的 AWS 帳戶中的 Amazon S3 儲存桶的資訊。已將 Amazon S3 系統新增至「系統」頁面，以便您可以查看此資訊。 
 ---
 = 查看您的 Amazon S3 儲存桶
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 在 AWS 中安裝控制台代理程式後， NetApp控制台可以自�
 
 
 [role="lead"]
-在 AWS 中安裝控制台代理程式後， NetApp控制台可以自動發現安裝了控制台代理程式的 AWS 帳戶中的 Amazon S3 儲存桶的資訊。已將 Amazon S3 系統新增至「系統」頁面，以便您可以查看此資訊。
+在 AWS 中安裝控制台代理程式後， NetApp Console可以自動發現安裝了控制台代理程式的 AWS 帳戶中的 Amazon S3 儲存桶的資訊。已將 Amazon S3 系統新增至「系統」頁面，以便您可以查看此資訊。
 
-您可以查看有關 S3 儲存桶的詳細信息，包括區域、存取策略、帳戶、總容量和已使用容量等。這些儲存桶可用作NetApp備份和復原、 NetApp分層或NetApp複製和同步作業的目標。此外，您可以使用NetApp資料分類來掃描這些儲存桶。
+您可以查看有關 S3 儲存桶的詳細信息，包括區域、存取策略、帳戶、總容量和已使用容量等。這些儲存桶可用作NetApp備份和復原、 NetApp分層或NetApp複製和同步作業的目標。此外，您可以使用NetApp Data Classification來掃描這些儲存桶。
 
 .步驟
 . https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["安裝控制台代理"^]在您想要查看 Amazon S3 儲存桶的 AWS 帳戶中。
-. 從NetApp控制台選單中，選擇“*儲存*”，然後選擇“*管理*”。
+. 從NetApp Console選單中，選擇“*儲存*”，然後選擇“*管理*”。
 +
 不久之後您應該會自動看到您的 Amazon S3 系統。
 
@@ -28,9 +28,9 @@ summary: 在 AWS 中安裝控制台代理程式後， NetApp控制台可以自�
 
 image:screenshot-amazon-s3-we.png["Amazon S3 系統的螢幕截圖。"]
 
-. 如果您想使用 S3 儲存啟用NetApp控制台服務，請按一下系統並從右側窗格中選擇一個操作。
+. 如果您想使用 S3 儲存啟用NetApp Console服務，請按一下系統並從右側窗格中選擇一個操作。
 +
-link:task-s3-enable-data-services.html["查看哪些NetApp控制台服務可用，並了解如何將它們與您的 S3 儲存桶一起使用"] 。
+link:task-s3-enable-data-services.html["查看哪些NetApp Console服務可用，並了解如何將它們與您的 S3 儲存桶一起使用"] 。
 
 . 點擊*進入 S3 系統*，或雙擊系統，查看有關您的 AWS 帳戶中的 S3 儲存桶的詳細資訊。
 +
@@ -39,6 +39,6 @@ link:task-s3-enable-data-services.html["查看哪些NetApp控制台服務可用�
 
 
 .下一步
-您可以透過點擊NetApp控制台直接變更某些儲存桶設置image:button-horizontal-more.gif["三個點更多按鈕"]拿一桶。link:task-change-s3-bucket-settings.html["點此了解詳情"] 。
+您可以透過點擊NetApp Console直接變更某些儲存桶設置image:button-horizontal-more.gif["三個點更多按鈕"]拿一桶。link:task-change-s3-bucket-settings.html["點此了解詳情"] 。
 
 您可以透過點擊「新增儲存桶」來新增新的 S3 儲存桶。link:task-add-s3-bucket.html["點此了解詳情"] 。
